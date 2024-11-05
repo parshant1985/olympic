@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olympic Horizon</title>
+  <!-- Bootstrap CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="text-white py-3">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><img src="./images/ola.png"
+            style="width: 88px; border: none; box-shadow: none;"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="myFunction('home')">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)"
+                onclick="myFunction('category')">Category</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)"
+                onclick="myFunction('trending')">Trending</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="myFunction('event')">Event
+                Highlights</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)"
+                onclick="myFunction('athletes')">Athletes</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="myFunction('sports')">Sports
+                Article</a></li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-warning my-2 my-sm-0" type="submit">Go</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="hero container" id="home">
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade-slide">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/image-10.png" alt="Hockey" class="img-fluid w-100">
+        <div class="hero-content text-white position-absolute p-4">
+
+          <p class="text-dec">
+            India eye Asian Champions Trophy hockey title defence – full schedule</p>
+          </p>
+          <button class="btn-reading">Continue Reading</button>
+        </div>
+      </div>
+
+      <div class="mySlides fade-slide">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/slide.jpg" alt="Hockey" class="img-fluid w-100">
+        <div class="hero-content text-white position-absolute p-4">
+
+          <p class="text-dec">
+            India eye Asian Champions Trophy hockey title defence – full schedule</p>
+          </p>
+          <button class="btn-reading">Continue Reading</button>
+        </div>
+      </div>
+      <div class="mySlides fade-slide">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/slide2.jpg" alt="Hockey" class="img-fluid w-100">
+        <div class="hero-content text-white position-absolute p-4">
+
+          <p class="text-dec">
+            India eye Asian Champions Trophy hockey title defence – full schedule</p>
+          </p>
+          <button class="btn-reading">Continue Reading</button>
+        </div>
+      </div>
+
+
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+  </section>
+
+  <section class="category py-5" id="category">
+
+    <div class="container">
+      <h2>Category</h2>
+      <div style="display: flex;">
+
+        <div class="col pl-0">
+          <div class="category-card">
+            <h1>Football</h1>
+          </div>
+          <div class="mt-4"><img data-holder-rendered="true" style="height: 225px; width: 100%; display: block;"
+              src="./images/soccer-ball.png">
+          </div>
+        </div>
+        <div class="col ">
+          <div><img data-holder-rendered="true" style="height: 225px; width: 100%; display: block;"
+              src="./images/fencing@2x.png">
+            <div class="category-card mt-4">
+              <h1>Fencing</h1>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="category-card ">
+            <h1>Badminton</h1>
+          </div>
+          <div class="mt-4"><img data-holder-rendered="true" style="height: 225px; width: 100%; display: block;"
+              src="./images/badminton.png">
+          </div>
+        </div>
+        <div class="col pr-0">
+          <div><img data-holder-rendered="true" style="height: 225px; width: 100%; display: block;"
+              src="./images/hockey@2x.png">
+            <div class="category-card mt-4">
+              <h1>Hockey</h1>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+  <!--section sports player details-->
+
+  <div class="container" id="trending">
+    <div class="main-container">
+      <h2>Trending News</h2>
+      <div class="d-flex">
+        <div class="col pl-0">
+          <div class="d-flex">
+
+            <div class="left-sec"><img style="border-radius: 5px;" src="./images/sachin@2x.png">
+            </div>
+            <div class="right-sec">World champion Sachin Sarjerao Khilari of India won the silver medal in the men’s
+              shot put F46 event at the Paris 2024
+              Paralympics on Wednesday.
+            </div>
+          </div>
+          <div class="d-flex">
+
+            <div class="left-sec"><img style="border-radius: 5px; " src="./images/para-athletes@2x.png">
+            </div>
+            <div class="right-sec">A record 84 para athletes are representing India at the ongoing Paris 2024
+              Paralympics being held in the French capital
+              from August 28 to September 8.
+            </div>
+          </div>
+          <div class="d-flex">
+
+            <div class="left-sec"><img style="border-radius: 5px;" src="./images/uefa-nations@2x.png">
+            </div>
+            <div class="right-sec">The UEFA Nations League 2024-25 season will start on Thursday with 54 nations split
+              into four separate leagues based on
+              their international rankings.
+            </div>
+          </div>
+
+        </div>
+        <div class="col">
+          <img style="width: 100%; border-radius: 5px;" src="./images/harvinder-singh.png">
+          <div class="player">
+            <p>Paralympic Games | Paris</p>
+            <h4>Harvinder singh wins India’s first Paralympic Gold medal in Archery</h4>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <section class="container" id="event">
+    <div class="event-highlights">
+      <h2>Event Highlights</h2>
+      <div class="img-highlight">
+        <img src="./images/image 9.jpg" style="width: 100%;">
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="container medal-table  bg-light" id="athletes">
+
+    <div class="d-flex">
+      <div class="col">
+
+        <h2>Athletes</h2>
+
+        <div class="d-flex" style="position: relative;">
+          <div class="highlights">
+            <span>Day 5 highloghts</span>
+            <p>Neeraj Chopra: India's maiden Olympic athletics gold</p>
+          </div>
+          <img src="./images/neeraj.jpg">
+          <div class="play-state ml-4 pl-3">
+            <div class="d-flex ">
+              <div style="width: 80px;"><img src="./images/image@2x.png" style="max-width: 79%;"></div>
+              <div class="img-text">
+                <span>Canada</span>
+                <p>Sean McColl</p>
+              </div>
+            </div>
+            <div class="d-flex pt-3">
+              <div style="width: 80px;"><img src="./images/image-8@2x.png" style="max-width: 79%;"></div>
+              <div class="img-text">
+                <span>Germany</span>
+                <p>Jhon San</p>
+              </div>
+            </div>
+            <div class="d-flex pt-3">
+              <div style="width: 80px;"><img src="./images/image.png" style="max-width: 79%;"></div>
+              <div class="img-text">
+                <span>China</span>
+                <p>lee mishog</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+
+
+        </div>
+      </div>
+      <div class="col">
+        <h2 class="text-center">Medal Table</h2>
+        <table class="table table-bordered text-center ">
+          <thead class="thead-dark">
+            <tr>
+              <th>Order NOC’s</th>
+              <th>Counrty</th>
+              <th>Gold</th>
+              <th>Silver</th>
+              <th>Bronze</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><img src="./images/image-1.png" style="width: 30px; float: left; margin:5px 0;" /><span
+                  style="font-size: 11px;">states of
+                  America</span></td>
+              <td>40</td>
+              <td>42</td>
+              <td>44</td>
+              <td>120</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><img src="./images/image-5.png" style="width: 30px; float: left; margin:5px 0;" /><span
+                  style="font-size: 11px;">Germany</span></td>
+              <td>40</td>
+              <td>42</td>
+              <td>44</td>
+              <td>120</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><img src="./images/image-2.png" style="width: 30px; float: left; margin:5px 0;" /><span
+                  style="font-size: 11px;">China</span></td>
+              <td>40</td>
+              <td>42</td>
+              <td>44</td>
+              <td>120</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><img src="./images/image-3.png" style="width: 30px; float: left; margin:5px 0;" /><span
+                  style="font-size: 11px;">Japan</span></td>
+              <td>40</td>
+              <td>42</td>
+              <td>44</td>
+              <td>120</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><img src="./images/image-4.png" style="width: 30px; float: left; margin:5px 0;" /><span
+                  style="font-size: 11px;">Australia</span></td>
+              <td>40</td>
+              <td>42</td>
+              <td>44</td>
+              <td>120</td>
+            </tr>
+
+
+            <!-- Additional rows here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <section class="sports-article py-5" id="sports">
+    <div class="container">
+      <h2 class="text-center">Sports Article</h2>
+      <div class="d-flex">
+        <div class="col">
+          <img src="./images/para-athletes@2x.png" class="mb-3">
+
+          <span>Jyoti Berwal</span>
+          <h5>U20 World Wrestling Championships 2024: Indian medal winners</h5>
+          <p>A total of 30 Indian wrestlers are competing at the ongoing U20 World Wrestling Championships 2024 in
+            Spain. Get the
+            full list of Indian medal winners.</p>
+        </div>
+        <div class="col">
+          <img src="./images/sachin@2x.png" class="mb-3">
+          <span>Jyoti Berwal</span>
+          <h5>U20 World Wrestling Championships 2024: Indian medal winners</h5>
+          <p>A total of 30 Indian wrestlers are competing at the ongoing U20 World Wrestling Championships 2024 in
+            Spain. Get the
+            full list of Indian medal winners.</p>
+        </div>
+        <div class="col">
+          <img src="./images/uefa-nations@2x.png" class="mb-3">
+          <span>Jyoti Berwal</span>
+          <h5>U20 World Wrestling Championships 2024: Indian medal winners</h5>
+          <p>A total of 30 Indian wrestlers are competing at the ongoing U20 World Wrestling Championships 2024 in
+            Spain. Get the
+            full list of Indian medal winners.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <div class="container">
+
+    <div class="text-center">
+      <img src="./images/event.jpg" alt="Event Image" class="img-fluid">
+    </div>
+  </div>
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>Follow us on:</p>
+      <img src="./images/group-143725887@2x.png" alt="Facebook" class="img-fluid"
+        style="width: 150px; box-shadow: none; border: none;">
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+    function myFunction(e) {
+      console.log(e)
+      const element = document.getElementById(e)
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+
+    }
+  </script>
+</body>
+
+</html>
